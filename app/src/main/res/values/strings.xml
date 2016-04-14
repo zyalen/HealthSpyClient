@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">HealthSpy</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="sign_in">登   录</string>
+    <string name="sign_up">注   册</string>
+    <string name="phone">请输入手机号码</string>
+    <string name="password">请输入密码</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="forget_pw">忘记密码？</string>
+    <string name="comfirm_password">请再次输入密码</string>
+
+    <!-- Strings related to the mainactivity -->
+    <string name="checkup">体 检</string>
+    <string name="report">报 告</string>
+    <string name="shop">商 店</string>
+    <string name="me">我 的</string>
+
+    <!-- Strings related to the useractivity -->
+    <string name="nickname">昵称</string>
+    <string name="gender">性别</string>
+    <string name="age">年龄</string>
+    <string name="user_phone">电话号码</string>
+    <string name="user_change">修   改</string>
+    <string name="sign_out">登   出</string>
+
+    <string name="nickname_edit">您的昵称是：</string>
+    <string name="gender_edit">您的性别是：</string>
+    <string name="age_edit">您的年龄是：</string>
+    <string name="phone_edit">您的号码是：</string>
+
+    <string name="nickname_edit_in">请输入您的昵称</string>
+    <string name="age_edit_in">请输入您的年龄</string>
+    <string name="phone_edit_in">请输入您的电话号码</string>
+
+    <string name="date">日   期</string>
+    <string name="heart_rate">心   率</string>
+
+</resources>

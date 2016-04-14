@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:Android="http://schemas.android.com/apk/res/android"
+    Android:orientation="vertical"
+    Android:layout_width="fill_parent"
+    Android:layout_height="fill_parent"
+    Android:background="@color/bg_white">
+
+    <TextView Android:text="推荐商品： "
+        Android:layout_width="wrap_content"
+        Android:layout_height="wrap_content"
+        Android:textColor="#000000"
+        Android:textSize="20dp"/>
+
+    <!-- 商品列表 -->
+    <ListView Android:id="@+id/list_good_goods"
+        Android:layout_width="fill_parent"
+        Android:layout_height="150dp" />
+
+    <TextView Android:text="所有商品： "
+        Android:layout_width="wrap_content"
+        Android:layout_height="wrap_content"
+        Android:textColor="#000000"
+        Android:textSize="20dp"/>
+
+    <!-- 商品列表 -->
+    <ListView Android:id="@+id/list_goods"
+        Android:layout_width="fill_parent"
+        Android:layout_height="wrap_content" />
+
+</LinearLayout>

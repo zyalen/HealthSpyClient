@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:Android="http://schemas.android.com/apk/res/android"
+    Android:orientation="horizontal"
+    Android:layout_width="fill_parent"
+    Android:layout_height="fill_parent"
+    Android:background="@color/bg_white">
+
+    <!-- 商品图片 -->
+    <ImageView Android:id="@+id/imageItem"
+        Android:layout_width="wrap_content"
+        Android:layout_height="wrap_content"
+        Android:layout_margin="5px"
+        Android:src="@drawable/item"/>
+
+    <!-- 商品信息 -->
+    <LinearLayout Android:orientation="vertical"
+        Android:layout_width="wrap_content"
+        Android:layout_height="wrap_content">
+
+        <TextView Android:id="@+id/titleItem"
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:textColor="#000000"
+            Android:textSize="20px"
+            Android:text="物品名称"/>
+        <TextView Android:id="@+id/infoItem"
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:textColor="#000000"
+            Android:text="物品"
+            Android:textSize="40px" />
+        <TextView Android:id="@+id/price"
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:textColor="#000000"
+            Android:textSize="20px"
+            Android:text="物品价格"/>
+        <TextView Android:id="@+id/priceItem"
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:textColor="#000000"
+            Android:text="价格"
+            Android:textSize="40px" />
+    </LinearLayout>
+
+</LinearLayout>

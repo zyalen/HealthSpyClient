@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/a_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:cacheColorHint="#00000000"
+        android:orientation="horizontal" >
+
+        <View style="@style/vertical_layout" />
+        <!-- 一条线 -->
+
+        <TextView
+            android:id="@+id/item2bzrbjzb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="false"
+            android:text="@string/date"
+            android:textColor="@android:color/black"
+            android:textSize="15.0sp" >
+        </TextView>
+
+        <View style="@style/vertical_layout" />
+        <!-- 一条线 -->
+
+        <TextView
+            android:id="@+id/item3bzrbjzb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="false"
+            android:text="@string/heart_rate"
+            android:textColor="@android:color/black"
+            android:textSize="15.0sp" >
+        </TextView>
+
+        <View style="@style/vertical_layout" />
+        <!-- 一条线 -->
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="4.0dip"
+        android:background="#dadada" />
+    <!-- 一条线 -->
+
+</LinearLayout>

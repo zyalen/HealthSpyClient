@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_topbar"
+    android:stretchColumns = "0, 1" >
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/heart_rate_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="心 率 检 测"
+            android:textSize="25dp"
+            android:onClick="check_up">
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="视 力 检 测"
+            android:textSize="25dp">
+        </Button>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="血 压 检 测"
+            android:textSize="25dp">
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="血 脂 检 测"
+            android:textSize="25dp">
+        </Button>
+    </TableRow>
+
+</TableLayout>
