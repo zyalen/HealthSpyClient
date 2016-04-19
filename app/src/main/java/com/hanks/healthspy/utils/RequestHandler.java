@@ -97,7 +97,7 @@ public class RequestHandler {
 
         } catch (Exception e) {
 
-            return e.toString();
+            e.printStackTrace();
 
         }
 

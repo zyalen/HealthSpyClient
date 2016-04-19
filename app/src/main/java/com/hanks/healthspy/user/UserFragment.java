@@ -1,6 +1,7 @@
 package com.hanks.healthspy.user;
 
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
@@ -129,15 +130,24 @@ public class UserFragment extends Fragment {
         String jsonString = "{\"id\":"+ Integer.toString(id) +"}";
         String msg = RequestHandler.sendPostRequest(Data.url+"/get_user_info", jsonString);
         if (msg == "false") {
-            Toast.makeText(getActivity().getApplicationContext(), "连接失败，请检查网络是否连接并重试",
-                    Toast.LENGTH_SHORT).show();
+            getActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    Toast.makeText(getActivity().getApplicationContext(), "连接失败，请检查网络是否连接并重试",
+                            Toast.LENGTH_SHORT).show();
+                }
+            });
         } else {
             try {
                 JSONObject jO = new JSONObject(msg);
                 if (jO.getInt("status") != 200) {
-                    Toast.makeText(getActivity().getApplicationContext(), "未找到用户信息！",
-                            Toast.LENGTH_SHORT).show();
-                    return;
+                    getActivity().runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(getActivity().getApplicationContext(), "未找到用户信息",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 } else {
                     nickname = "";
                     age = "";

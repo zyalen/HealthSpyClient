@@ -92,8 +92,13 @@ public class ReportFragment extends Fragment {
         String jsonString = "{\"user_id\":"+ Integer.toString(id) +"}";
         String msg = RequestHandler.sendPostRequest(Data.url + "/get_health_list", jsonString);
         if (msg == "false") {
-            Toast.makeText(getActivity().getApplicationContext(), "连接失败，请检查网络是否连接并重试",
-                    Toast.LENGTH_SHORT).show();
+            getActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    Toast.makeText(getActivity().getApplicationContext(), "连接失败，请检查网络是否连接并重试",
+                            Toast.LENGTH_SHORT).show();
+                }
+            });
         } else {
             try {
                 int flag = 0;
@@ -105,8 +110,13 @@ public class ReportFragment extends Fragment {
                     }
                 }
                 if (flag == 0) {
-                    Toast.makeText(getActivity().getApplicationContext(), "未找到用户体检报告",
-                            Toast.LENGTH_LONG).show();
+                    getActivity().runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(getActivity().getApplicationContext(), "未找到用户体检报告",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
