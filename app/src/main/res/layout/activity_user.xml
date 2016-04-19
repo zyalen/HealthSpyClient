@@ -44,13 +44,15 @@
 
         <TextView
             android:id="@+id/nickname"
-            android:layout_width="80dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:layout_centerHorizontal="true"
             android:text="@string/nickname"
             android:textColor="@color/text_gray"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:layout_above="@+id/view"
+            android:layout_alignLeft="@+id/gender"
+            android:layout_alignStart="@+id/gender" />
 
         <View
             android:layout_width="fill_parent"
@@ -73,14 +75,14 @@
 
         <TextView
             android:id="@+id/gender"
-            android:layout_width="80dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/nickname_txt"
-            android:layout_marginTop="30dp"
             android:text="@string/gender"
             android:textColor="@color/text_gray"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:layout_above="@+id/view2"
+            android:layout_alignLeft="@+id/age"
+            android:layout_alignStart="@+id/age" />
 
         <View
             android:layout_width="fill_parent"
@@ -103,15 +105,15 @@
 
         <TextView
             android:id="@+id/age"
-            android:layout_width="80dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/gender_txt"
             android:layout_marginTop="30dp"
             android:text="@string/age"
             android:textColor="@color/text_gray"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:layout_alignLeft="@+id/phone"
+            android:layout_alignStart="@+id/phone" />
 
         <View
             android:layout_width="fill_parent"
@@ -133,7 +135,7 @@
 
         <TextView
             android:id="@+id/phone"
-            android:layout_width="80dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_centerHorizontal="true"

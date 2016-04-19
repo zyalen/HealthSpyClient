@@ -150,7 +150,7 @@ public class UserFragment extends Fragment {
                         this.age = Integer.toString(jO.getInt("age"));
                     }
                     if (!jO.isNull("phone")) {
-                        this.phone = Integer.toString(jO.getInt("phone"));
+                        this.phone = jO.getString("phone");
                     }
                     if (!jO.isNull("gender")) {
                         if (jO.getInt("gender") == 0) {
